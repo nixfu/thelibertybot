@@ -1,0 +1,48 @@
+---
+    ## Configuration for thelibertybot - note this file uses yaml syntax - this wiki page should be unlisted, and set to view/edit by mods only
+    ##
+    ## This bot requires at least the following moderator permissions:
+    ##    posts - to moderate submissions/comments
+    ##    wiki - to be able to read the bot configuration wiki (THIS)page: /r/<subreddit>/wiki/subwatchbot
+
+    ## ================================================
+    ## Automatic Report Approvals Settings
+    ## ================================================
+    ##
+    ## The bot will automatically ignore/approve any reports of those following types when they are the ONLY report. 
+    ## Items with multiple reports will be not be automatically ignored/approved and be left for moderator intervention.
+    ## ------------------------------
+    ## reportapprove_feature - Uncomment and set to true to enable this feature (default false)
+    reportapprove_feature: true
+    ## ------------------------------
+    ## reportapprove_list - a LIST of text items to match against, skip if the report type text contains any of the items in the list.
+    reportapprove_list:
+      - "This is misinformation"
+    #  - "This is spam"
+    #  - "promoting hate based on identity or vulnerability"
+    #  - "transaction for prohibited goods or services"
+
+    ## ================================================
+    ## Submission Statement Watch Settings
+    ## ================================================
+    ## 
+    ## The bot will automatically watch for recent submissions and ensure the OP has made a submission statement
+    ## comment within the required amount of time.   If the submission statement is not made in time, the submission will
+    ## be automatically removed, and an automated comment will be made letting the user know why and directing them where
+    ## to read the required policy.
+    ## ------------------------------
+    ## submissionstatement_feature - Uncomment and set to true to enable this feature (default false)
+    ## submissionstatement_min_length - Set to minimum number of characters (after the ss:) required to be considered a valid statement
+    ## submissionstatement_max_mins_grace - Set to maximum number of minutes user has to enter a submission statement top level comment
+    #submissionstatement_feature: true
+    #submissionstatement_min_length: 50
+    #submissionstatement_grace_mins: 60
+
+    ## ================================================
+    ## User Exceptions List GLOBAL for all bot actions
+    ## ================================================
+    ## userexceptions - a LIST of users for whom that all actions will be bypassed (optional)
+    #userexceptions:
+    #  - UserOne
+    #  - UserTwo
+
